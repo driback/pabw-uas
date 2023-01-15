@@ -1,0 +1,40 @@
+@use "../util/" as u;
+
+.ItemList {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+  align-items: center;
+
+  &__Item {
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  &__Buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.85rem;
+  }
+
+  &__Button {
+    display: block;
+    outline: 0;
+    border: 0;
+    border-radius: 0.35rem;
+    background-color: u.$almostblack;
+    color: u.$almostwhite;
+    font-family: inherit;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.55rem 0.85rem;
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+
+    &:hover {
+      background-color: lighten($color: u.$almostblack, $amount: 20);
+      scale: 0.97;
+    }
+  }
+}

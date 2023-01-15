@@ -1,0 +1,10 @@
+.TugasSatuLayout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: min(100% - 3rem, 22rem);
+  margin-inline: auto;
+  padding: 4rem 0;
+}

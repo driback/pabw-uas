@@ -1,0 +1,58 @@
+.Delete {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: grid;
+  place-content: center;
+  background-color: rgba($color: #000000, $alpha: 0.9);
+
+  &__Box {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    gap: 1.5rem;
+    width: 15rem;
+  }
+
+  &__Title {
+    font-size: 1.5rem;
+    color: black;
+  }
+
+  &__Cta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    > button {
+      flex: 1 1 50%;
+      padding: 0.55rem 0.85rem;
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 500;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      color: white;
+      cursor: pointer;
+      transition: all 100ms ease-in-out;
+
+      &:hover {
+        scale: 0.97;
+      }
+    }
+  }
+
+  &__Cancel {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+  }
+
+  &__Del {
+    background-color: red;
+  }
+}

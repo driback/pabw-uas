@@ -1,0 +1,8 @@
+.TugasDuaLayout {
+  display: flex;
+  flex-direction: column;
+  width: min(100% - 3rem, 75rem);
+  margin-inline: auto;
+  padding: 2rem 0;
+  gap: 3rem;
+}

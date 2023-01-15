@@ -1,0 +1,30 @@
+@use "../util/" as u;
+
+.Navigation {
+  display: block;
+  position: relative;
+  background-color: inherit;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  width: 100%;
+
+  &__Nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__Item {
+    display: block;
+    padding: 2rem 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    flex: 1 1 calc(100% / 4);
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 100ms ease-in;
+
+    &:hover {
+      font-weight: 600;
+      scale: 0.92;
+    }
+  }
+}
